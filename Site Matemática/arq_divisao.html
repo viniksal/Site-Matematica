@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão</title>
+    <link rel="stylesheet" href="site-matematica.css" type="text/css">
+</head>
+<body>
+    
+    <div class="divisao">
+        <header id="header">
+            <div id="margem_cabe">
+                <center><img src="logo.png" width="100px" id="logo">
+                <h1>Matema</h1></center>
+                
+                <details>
+                    <summary><img src="menu.png" width="45px"></summary>
+                    <p><a href="arq_index.html">Início</a></p>
+                    <p><a href="arq_soma.html">Adição</a></p>
+                    <p><a href="arq_subtracao.html">Subtração</a></p>
+                    <p><a href="arq_divisao.html">Divisão</a></p>
+                    <p><a href="arq_multiplicacao.html">Multiplicação</a></p>
+                    <p><a href="arq_radiciacao.html">Radiciação</a></p>
+                    <p><a href="arq_potencia.html">Potência</a></p>
+                    <p><a href="arq_expressao.html">Expressões</a></p>
+                    <p><a href="arq_conjuntos.html">Conjuntos</a></p>
+                    <p><a href="arq_juros.html">Juros</a></p>
+                    <p><a href="arq_referencias.html">Referências</a></p>
+                </details>
+            </div>
+        </header>
+        
+        <main id="divisao-main">
+            <div class="corpo">
+                <center><h1>Divisão</h1></center>
+                <div id="folha_div">
+                    <div class="margem-body">
+                        <p>
+                            A <strong>divisão</strong> é uma das quatro operações básicas da Matemática, estando presente não só na 
+                            vida estudantil, mas também no cotidiano de todos nós. Assim como a 
+                            <a href="arq_soma.html"><font color="blue">adição</font></a> 
+                            possui sua 
+                            operação inversa, que é a 
+                            <a href="arq_subtracao.html"><font color="blue">subtração</font></a>, a 
+                            <a href="arq_multiplicacao.html"><font color="blue">multiplicação</font></a> também possui a sua operação 
+                            inversa: a divisão.
+                        </p>
+
+                        <h2>Partes ou elementos da divisão</h2>
+                
+                        <p>
+                            Um dos métodos que facilitam a compreensão do algoritmo da divisão é o chamado <strong>método da chave</strong>. Vamos 
+                            primeiro entender as nomenclaturas desse método. Para isso, suponha que dividiremos um número N por um número d:
+                        </p>
+
+                        <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/algoritimo-divisao.png" alt="Foto do método da chave"></center>
+
+                        <p><center><big>
+                                N → Dividendo<br>
+                                d → Divisor<br>
+                                q → Quociente<br>
+                                r → Resto
+                        </p></center></big>
+
+                        <p>
+                            Exemplo:
+                        </p>
+
+                        <p>
+                            Na divisão de 30 por 4, utilizando o método da chave, temos:
+                        </p>
+
+                        <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/divisao-30-4.png" alt="Foto do método da chave exemplificado"></center>
+
+                        <p><center><big>
+                            30 → Dividendo<br>
+                            4 → Divisor<br>
+                            7 → Quociente<br>
+                            2 → Resto
+                    </p></center></big>
+
+                    <p>
+                        O método da chave nos diz que, ao dividirmos o número 30 pelo número 4, não encontramos uma 
+                        divisão exata (veja o resto 2), ou seja, ao dividirmos 30 por 4, temos 7 partes inteiras e 
+                        mais 2 de resto. Dizemos que uma divisão é exata quando o resto é igual a 0.
+                    </p>
+
+                    <h2>Divisão passo a passo</h2>
+
+                    <p>
+                        Para realizar uma divisão de um número N por um número d, basta aplicar o algoritmo da 
+                        divisão. Inicialmente temos que imaginar um número que vezes d resulta em N ou chegue o 
+                        mais próximo possível de N. Caso encontre um número que o resultado seja igual a N, a 
+                        divisão pode ser realizada. Caso o número encontrado não seja igual a N, temos que subtrair
+                        N desse resultado. Veja os exemplos a seguir.
+                    </p>
+
+                    <p>
+                        Exemplo - Vamos dividir o número 60 por 5.
+                    </p>
+                    <p>
+                        <strong>Passo 1</strong> – Vamos primeiramente “armar” a divisão utilizando o método da chave.
+                    </p>
+
+                    <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/2-passo1.jpg" alt="Foto do exemplo 60 por 5"></center>
+
+                    <p>
+                        <strong>Passo 2</strong>– Agora temos que descobrir um número que, multiplicado por 5, seja igual 
+                        ou chegue mais o próximo de 60. Dos critérios de divisibilidade, sabemos que números terminados em 0 são divisíveis por 5. Assim,
+                    </p>
+
+                    <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/2-passo2.jpg" alt="Foto do exemplo 60 por 5 completo"></center>
+
+                    <p>
+                        Chegamos à conclusão de que o resto da divisão é o número zero, ou seja, a divisão foi finalizada e é exata.
+                    </p>
+
+                    <h2>Divisão com vírgula</h2>
+
+                    <p>
+                        Para dividir dois números com vírgula, basta multiplicar o dividendo e o divisor por  de <a href="arq_potencia.html"><font color="blue">potências</font></a> 
+                        base 10 até que a vírgula “desapareça ”da divisão. Veja o exemplo a seguir.
+                    </p>
+
+                    <p>
+                        Exemplo:
+                    </p>
+
+                    <p>
+                        - Dividir 0,0006 por 0,05.
+                    </p>
+
+                    <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/divisao-virgula.jpg" alt="Foto do exemplo 0,0006 por 0,05"></center>
+
+
+                    <p>
+                        Vamos primeiramente multiplicar o dividendo e o divisor por 10000. A quantidade de casas decimais que “andamos” é a 
+                        quantidade de zeros que devemos colocar no número que vamos multiplicar.
+                    </p>
+
+                    <p><center>
+                        0,0006 · 10000 = 6<br>
+                        0,05 · 10000 = 500
+                    </p></center>
+
+                    <p>
+                        Assim,
+                    </p>
+
+                    <center><img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/divisao-com-virgula.jpg" alt="Foto do exemplo 0,0006 por 0,05 final"></center>
+                    <center><small><smal>Seguindo o passo a passo anterior, chegamos à conclusão de que o quociente é 0,012.</smal></small></center>
+
+                    <br><br>
+                    <p>Use o exemplo abaixo para fazer seus testes e tirar suas dúvidas, é você quem manda.</p>
+                    <br><br>
+
+                    <h1><center>AGORA É A SUA VEZ</center></h1>
+
+                        <div class="form_js">
+                            <div class="folha_js">
+                                <p>Divisão   <input type="button" value="Dividir" onclick="dividir()"> </p> 
+                                <input type="number" name="n1" id="d1"> /
+                                <input type="number" name="n2" id="d2"> = 
+                                <div id="res_divisao">   </div> <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>                                  
+      <footer id="footer">
+        <div class="cit">
+            <p>
+                ❝A melhor forma de prever o futuro é criá-lo.❞</p>
+            <div class="abr"><small><small>
+                ~Abraham Lincoln
+            </div></small></small>
+        </div>
+        <div class="foo">
+            <hr>
+            <center><small><small><small><p>copyright ©2022 Matemática do 1ºInfo. developed by Igor Pedro Vinícius Wendel</p></small></small></small></center>
+        </div>
+      </footer>    
+    </div>
+    
+    <script src="site_matematica.js"></script>
+</body>
+</html>

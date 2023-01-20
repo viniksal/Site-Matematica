@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros</title>
+    <link rel="stylesheet" href="site-matematica.css" type="text/css">
+</head>
+<body>
+    
+    <div class="juros">
+        <header id="header">
+            <div id="margem_cabe">
+                <center><img src="logo.png" width="100px" id="logo">
+                <h1>Matema</h1></center>
+                
+                <details>
+                    <summary><img src="menu.png" width="45px"></summary>
+                    <p><a href="arq_index.html">Início</a></p>
+                    <p><a href="arq_soma.html">Adição</a></p>
+                    <p><a href="arq_subtracao.html">Subtração</a></p>
+                    <p><a href="arq_divisao.html">Divisão</a></p>
+                    <p><a href="arq_multiplicacao.html">Multiplicação</a></p>
+                    <p><a href="arq_radiciacao.html">Radiciação</a></p>
+                    <p><a href="arq_potencia.html">Potência</a></p>
+                    <p><a href="arq_expressao.html">Expressões</a></p>
+                    <p><a href="arq_conjuntos.html">Conjuntos</a></p>
+                    <p><a href="arq_juros.html">Juros</a></p>
+                    <p><a href="arq_referencias.html">Referências</a></p>
+                </details>
+            </div>
+        </header>
+        
+        <main id="juros-main">
+            <div class="corpo">
+                <center><h1>Juros</h1></center>
+                <div id="folha_juros">
+                    <div class="margem-body">
+
+                        <h2>Juros Simples</h2>
+
+                        <p>
+                            O <strong>juros simples</strong> é calculado com base em um valor fixado chamado de capital inicial. 
+                            Trata-se de uma porcentagem do capital inicial aplicada durante determinado tempo. 
+                            A principal característica do juros simples é que <strong>o valor não se altera</strong> no decorrer dos meses.
+                        </p>
+
+                        <p>
+                            O conceito de juros simples é muito importante, uma vez que, em nosso cotidiano, ele é utilizado, por exemplo, 
+                            na compra de algo parcelado ou em um empréstimo.
+                        </p>
+
+                        <h3>Fórmula do juros simples</h3>
+
+                        <p>
+                            A fórmula do juros simples é dada por:
+                        </p>
+
+                        <table border="1" cellspacing="0" style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <center><p><strong>J = C · i · t</strong></p></center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Para deduzir e justificar essa fórmula, vamos imaginar a seguinte situação-problema. Na compra de um produto 
+                            no valor de R$ 100, o comprador solicitou o parcelamento em quatro vezes, entretanto, ao parcelar o valor do 
+                            produto, é cobrada uma taxa de 1% ao mês.
+                        </p>
+
+                        <p>
+                            Inicialmente, calcularemos 1% de 100.
+                        </p>
+
+                        <p><center><big>
+                            1% de 100<br>
+                            0,01 · 100 = 1
+                        </p></center></big>
+
+                        <h4>Mês 1:</h4>
+
+                        <p>
+                            Será cobrado o juros de 1 real, logo, o saldo devedor nesse primeiro mês será de:
+                        </p>
+
+                        <p><center><big>
+                            100 + 1
+                        </p></center></big>
+
+                        <h4>Mês 2:</h4>
+
+                        <p>
+                            Será cobrado novamente o juros de 1 real, assim, o saldo devedor será de:
+                        </p>
+
+                        <p><center><big>
+                            100 + 1 +1 <br>
+                            100 + 1 · 2
+                        </p></center></big>
+
+                        <h4>Mês 3:</h4>
+
+                        <p>
+                            Será cobrado o juros de 1 real novamente, assim:
+                        </p>
+
+                        <p><center><big>
+                            100 + 1 + 1 +1 <br>
+                            100 + 1 · 3
+                        </p></center></big>
+
+                        <h4>Mês 4:</h4>
+
+                        <p>
+                            Será cobrado, novamente, o juros de 1 real, assim:
+                        </p>
+
+                        <p><center><big>
+                            100 + 1 + 1 + 1 + 1 <br>
+                            100 + 1 · 4 <br>
+                            104
+                        </p></center></big>
+
+                        <p>
+                            Logo, o valor a ser pago ao final do parcelamento é de 104 reais.
+                        </p>
+
+                        <p>
+                            Observando a situação-problema, veja que, à medida que o tempo passa, <strong>o 
+                                juros é acrescido</strong> no valor do mês passado, ou seja: passados dois meses, 
+                            o valor a ser pago é duas vezes o valor da taxa de juros; passados três 
+                            meses, o valor a ser pago é três vezes o valor da taxa de juros, e assim 
+                            sucessivamente.
+                        </p>
+
+                        <p>
+                            De modo geral, após determinado tempo t (anos, meses, dias etc.), o valor a ser pago é de <strong>t</strong> 
+                            vezes o valor da taxa de juros <strong>(i)</strong> e, claro, com base no capital inicial <strong>(C)</strong>.
+                        </p>
+
+                        <p>
+                            Tal afirmação, utilizando uma notação matemática, chega à fórmula apresentada anteriormente:
+                        </p>
+
+                        <table border="1" cellspacing="0" style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <center><p><strong>J = C · i · t</strong></p></center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Devemos ficar atentos à seguinte observação, <strnog>a taxa de juros é sempre dada em porcentagem</strnog>, 
+                            mas, para realizar o cálculo, devemos utilizar a porcentagem em sua forma fracionária ou decimal.
+                        </p>
+
+                        <p>
+                            Outro detalhe ao qual devemos atentar-nos são as unidades de medida do tempo e da taxa, elas devem estar sempre 
+                            na mesma unidade, ou seja, se o tempo for dado em meses, a taxa de juros também deve ser dada em meses.
+                        </p>
+
+                        <p>
+                            O <strong>montante (M)</strong> é o valor do capital inicial adicionado ao valor do juros, ou seja:
+                        </p>
+
+                        <table border="1" cellspacing="0" style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <p style="margin-left:0.4cm; text-align:center"><strong>M = C + J</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Como calcular juros simples</h3>
+
+                        <p>
+                            Para calcularmos o juros simples, basta substituir as informações dadas pelo 
+                            problema na fórmula já deduzida. Para isso, vamos conferir algumas situações-problemas.
+                        </p>
+
+                        <p>
+                            Exemplo:
+                        </p>
+
+                        <p>
+                            Ao investir R$ 3.000 em uma aplicação bancária sob o regime de juros simples, a 
+                            uma taxa de 10% ao ano durante seis meses, qual o valor a ser retirado ao fim 
+                            dessa aplicação?
+                        </p>
+
+                        <p>
+                            O primeiro passo é anotar cada um dos dados do problema:
+                        </p>
+
+                        <p><center><big>
+                            J = ?; C = 3000,00; i = 10% ao ano; e t = 6 meses
+                        </p></center></big>
+
+                        <p>
+                            Agora, devemos observar as unidades de medida da taxa e do tempo. Caso estejam sendo 
+                            utilizadas as mesmas unidades, basta substituí-las na fórmula. Caso contrário, temos 
+                            que achar uma maneira de deixá-las iguais.
+                        </p>
+
+                        <p>
+                            De modo geral, é mais fácil “transformar” a unidade de medida do tempo do que a da taxa, 
+                            assim, vamos transformar 6 meses em anos, uma vez que a taxa foi dada em ano. Sabemos 
+                            que temos 12 meses em um ano, logo, em meio ano, temos 6 meses.
+                        </p>
+
+                        <p><center><big>
+                            0,5 ano → 6 meses <br>
+                            t = 0,5 ano
+                        </p></center></big>
+
+                        <p>
+                            Passando a taxa de juros para a forma decimal, temos:
+                        </p>
+
+                        <p><center><big>
+                            i = 10% <br>
+                            i = 10 ÷ 100 <br>                                                  
+                            i = 0,1
+                        </p></center></big>
+
+                        <p>
+                            Substituindo os dados na fórmula, temos:
+                        </p>
+
+                        <p><center><big>
+                            J = C · i · t <br>
+                            J = 3000 · 0,1 · 0,5 <br>
+                            J = 300 · 0,5 <br>
+                            J = 150 reais
+                        </p></center></big>
+
+                        <p>
+                            O juros, ao final da aplicação, é de 150 reais. Foi pedido o valor a ser retirado da aplicação, 
+                            ou seja, o valor aplicado mais o juros (montante).
+                        </p>
+
+                        <p><center><big>
+                            M = C + J <br>
+                            M = 3000 + 150 <br>                                                  
+                            M = 3.150 reais
+                        </p></center></big>
+
+                        <p>
+                            Logo, o valor a ser retirado da aplicação é de 3.150 reais.
+                        </p>
+
+                        <h2>Juros Compostos</h2>
+
+                        <p>
+                            O regime de <strong>juros compostos</strong> é o mais utilizado no mercado por oferecer <strong>maior 
+                            rentabilidade</strong> financeira. Essa maior rentabilidade ocorre pelo fato de esse 
+                            regime de capitalização ser calculado sempre com base no valor do montante do
+                            período anterior, o que faz com que o valor final cresça de maneira exponencial.
+                        </p>
+
+                        <h3>Fórmula do juro composto</h3>
+
+                        <p>
+                            A fórmula para calcular o valor do juro ao final de um período de tempo é a seguinte:
+                        </p>
+
+                        <p><center>
+                            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/05/formula-juros-compostos.jpg" 
+                            alt="Foto de juros composto (fórmula)" >
+                        </p></center>
+
+                        <ul>
+                            <li>M = montante;</li>
+                            <li>C = capital; </li>
+                            <li>i = taxa de juros;</li>
+                            <li>t = tempo.</li>
+                        </ul>
+
+                        <p>
+                            Lembre-se de que o montante é sempre a soma do capital com os juros.
+                        </p>
+
+                        <p><center><big>
+                            M = C + J
+                        </p></center></big>
+
+                        <p>
+                            Para melhor entendermos a fórmula, vamos imaginar a seguinte situação-problema: um capital de 
+                            R$ 3.000,00 foi aplicado em uma poupança durante 4 anos sob uma taxa de juros de 3% ao ano. 
+                            No final desse período, qual o montante arrecadado?
+                        </p>
+
+                        <table border="1" border-color="black" cellspacing="0" style="border:medium none; break-after:auto; break-before:auto; break-inside:auto; width:100%">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center"><strong>Ano</strong></p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>Capital (R$)</strong></p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>Juros (%)</strong></p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>Montante (R$)</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">1</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3000</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3% de 3000 = 90</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>3000 + 90 = </strong>3090</p>
+                        
+                                    <p style="text-align:center"><strong>3000 · (1 + 0,03)<sup>1 </sup></strong> = 3090</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">2</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3090</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3% de 3090 = 92,7</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>3090 + 92,7</strong> = 3182,7</p>
+                        
+                                    <p style="text-align:center"><strong>3000·(1 + 0,03)</strong><sup><strong>2</strong></sup> = 3182,7</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">3</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3182,7</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3% de 3182,7 = 95,4</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>3182,7 + 95,4</strong> = 3278,1</p>
+                        
+                                    <p style="text-align:center"><strong>3000 · (1 + 0,03)</strong><sup><strong>3</strong></sup> = 3278,1</p>
+                        
+                                    <p style="text-align:center">&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">4</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3278,1</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">3% de 3278,1 = 98,3</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center"><strong>3278,1 + 98,3</strong> = 3376,4</p>
+                        
+                                    <p style="text-align:center"><strong>3000 · (1 + 0,03)</strong><sup><strong>4</strong></sup><strong> = </strong><sup><strong> </strong></sup>3376,4</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Observe que o capital é sempre alterado após a capitalização. No segundo ano, por exemplo, o capital 
+                            para cálculo da taxa de juros foi o montante do ano 
+                            anterior. Outra observação são os valores dos montantes destacados em negrito na tabela. 
+                            Veja os do terceiro ano:
+                        </p>
+
+                        <p><center><big>
+                            3182,7 + 95,4 = 3000 · (1 + 0,03)<sup>3</sup> = 3278,1
+                        </p></center></big>
+
+                        <p>
+                            Nas igualdades acima, o montante destacado em roxo está escrito assim como na fórmula.
+                        </p>
+
+                        <p>
+                            Observando a tabela acima, podemos entender melhor o funcionamento da fórmula e, consequentemente, 
+                            os fatores que influenciam o valor do montante final. Para isso, basta observar quais fatores variam 
+                            na tabela. O primeiro fator é o tempo, uma vez que quanto mais o tempo passa, maior é o rendimento da 
+                            aplicação. O outro fator é o capital que é investido inicialmente.
+                        </p>
+
+                        <p>
+                            Claro que a taxa também influencia o valor final do montante. Se o problema trabalhado acima 
+                            mantivesse as mesmas condições e fosse alterada apenas a taxa, os demais resultados seriam diferentes.
+                        </p>
+
+                        <h3>Cálculo do juro composto</h3>
+
+                        <p>
+                            Para realizar o cálculo de juros compostos, devemos <strong>substituir as informações fornecidas pela 
+                            situação-problema na fórmula</strong>, mas sempre atentos às unidades de medida da taxa de juros (i) e
+                             do tempo (t).
+                        </p>
+
+                        <p>
+                            As unidades de medida da taxa de juros podem ser ao ano (a.a), ao mês (a.m) ou ao dia (a.d), e assim 
+                            por diante. Já as unidades de medida para representar o tempo são as já conhecidas: anos, meses, dias 
+                            ou horas.
+                        </p>
+
+                        <p>
+                            O que devemos observar antes de substituir as informações é a correspondência entre as unidades de medida 
+                            da taxa e tempo, ou seja, se a taxa está em anos, o tempo também deve estar.
+                        </p>
+
+                        <p>Exemplo:</p>
+
+                        <p>
+                            Um capital de R$ 10.000,00 foi aplicado em uma poupança sob taxa de juros compostos de 5% ao mês durante 
+                            1,5 ano. Determine o valor do montante dessa aplicação.
+                        </p>
+
+                        <p>
+                            (Dado: log<sub>1,05</sub>2,466190 = 18)
+                        </p>
+
+                        <p>Resolução:</p>
+
+                        <p>
+                            Com base no enunciado, podemos retirar as seguintes informações:
+                        </p>
+
+                        <p><center><big>
+                            C = R$ 10.000,00 <br>
+                            i = 5% a.m         <br>                 
+                            t = 1,5 ano → 18 meses
+                        </p></center></big>
+
+                        <p>
+                            Veja que a taxa e o tempo estão em unidades de medida diferentes. Antes de substituir na 
+                            fórmula, devemos transformar uma das unidades de medida. Em geral, transformar a unidade 
+                            de medida de tempo é uma tarefa mais fácil.
+                        </p>
+
+                        <p><center><big>
+                            1,5 ano → (1 + 0,5) ano
+                        </p></center></big>
+
+                        <p>
+                            Em um ano, temos 12 meses, logo, em meio ano (0,5), vamos ter 6 meses, assim:
+                        </p>
+
+                        <p><center><big>
+                            1,5 ano → (1 + 0,5) ano <br>
+                            1,5 ano → 12 + 6 meses <br>
+                            1,5 ano → 18 meses
+                        </p></center></big>
+
+                        <p><small><small>Outra observação:<strong> a taxa deve ser sempre escrita em sua forma decimal ou fracionária.</strong></small></small></p>
+
+                        <p><center>
+                            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/05/exemplo1.jpg" 
+                            alt="Foto de juros composto na forma fracionária" >
+                        </p></center>
+
+                        <p>
+                            Feitas as mudanças, vamos substituir na fórmula.
+                        </p>
+
+                        <p><center><big>
+                            M = C · (1 + i)t <br>
+                            M = 10.000 · (1 + 0,05)<sup>18</sup> <br>
+                            M = 10.000 · (1,05)<sup>18</sup> <br>
+                            M = 10.000 ·2,406619 <br>
+                            M = 24.066,19 reais
+                        </p></center></big>
+
+                        <p>
+                            Observe que, para calcular a potência (1,05)18, necessitamos do logaritmo fornecido no enunciado do exercício.
+                        </p>
+
+                        <p>
+                            Veja que resolvendo o logaritmo a seguir, temos que:
+                        </p>
+
+                        <p><center><big>
+                            log<sub>1,05</sub>2,406619 = 18 <br>
+                            (1,05)<sup>18</sup> = 2,406619
+                        </p></center></big>
+
+                        <h3>Diferença entre juros composto e simples</h3>
+
+                        <p>
+                            A diferença entre o regime de juros simples e compostos está na forma de capitalização. 
+                            No regime de juros simples, o montante do período seguinte é sempre calculado com base 
+                            no valor do capital inicial, ou seja, independentemente do tempo, isso sempre vai ocorrer. 
+                            No regime de juros compostos, o valor do montante é sempre calculado baseado no valor do 
+                            capital do mês anterior, o que faz com que o montante cresça de maneira exponencial.                           
+                        </p>
+
+                        <p>
+                            Vamos comparar um capital de R$2.000,00 aplicado em taxa de 5% ao mês durante 4 meses no 
+                            regime de juro simples e composto.
+                        </p>
+
+                        <h5><center>Juros Simples</center></h5>
+
+                        <table border="1" style="border: none; page-break-after: auto; page-break-before: auto; page-break-inside: auto; width:100%">
+                            <tbody>
+                                <tr>
+                                    <td style="background-color:#eeeeee">
+                                    <p style="text-align:center"><strong>Juros</strong></p>
+                                    </td>
+                                    <td style="background-color:#eeeeee">
+                                    <p style="text-align:center"><strong>Montante</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">1º mês → 2.000 · 0,05 = 100</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2000 + 100 = 2100</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">2º mês → 2.000 · 0,05 = 100</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2100 + 100 = 2.200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">3º mês → 2.000 · 0,05 = 100</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2200 + 100 = 2.300</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">4º mês → 2.000 · 0,05 = 100</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2300 + 100 = 2.400</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <P>
+                            Observe que o valor do juros é constante – nesse caso, sempre igual a R$100.
+                        </P>
+
+                        <h5><center>Juros Composto</center></h5>
+
+                        <table border="1" style="border:none; page-break-after:auto; page-break-before:auto; page-break-inside:auto; width:100%">
+                            <tbody>
+                                <tr>
+                                    <td style="background-color:#eeeeee">
+                                    <p style="text-align:center"><strong>Juros</strong></p>
+                                    </td>
+                                    <td style="background-color:#eeeeee">
+                                    <p style="text-align:center"><strong>Montante</strong></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">1º mês → 2.000 · 0,05 = 100</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2000 + 100 = 2100</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">2º mês → 2.100 · 0,05 = 105</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2100 + 105 = 2.205</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">3º mês → 2.205 · 0,05 = 110,25</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2205 + 110,25 = 2.315,25</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <p style="text-align:center">4º mês → 2.315,25 · 0,05 = 115,76</p>
+                                    </td>
+                                    <td>
+                                    <p style="text-align:center">M = 2.315,25 + 115,76= 2.431,01</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Observe que, <strong>no regime de juros compostos, o valor do juros não é constante</strong>,
+                            pois a taxa é calculada com base no montante do mês passado.
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </main>  
+
+        <footer id="footer">
+            <div class="cit">
+                <p>
+                    ❝A melhor forma de prever o futuro é criá-lo.❞</p>
+                <div class="abr"><small><small>
+                    ~Abraham Lincoln
+                </div></small></small>
+            </div>
+            <div class="foo">
+                <hr>
+                <center><small><small><small><p>copyright ©2022 Matemática do 1ºInfo. developed by Igor Pedro Vinícius Wendel</p></small></small></small></center>
+            </div>
+        </footer>    
+    </div>
+    
+    <script src="site_matematica.js"></script>
+</body>
+</html>
